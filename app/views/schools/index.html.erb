@@ -1,0 +1,7 @@
+<% @schools.each do |school| %>
+  <h2><%= school.uid %></h2>
+  <p><%= school.overweight_percentage %></p>
+  <p><%= school.obese_percentage %></p>
+  <p><%= link_to "Delete", school_path(school.id), method: :delete %></p>
+  <p><%= link_to "Edit", edit_school_path(school.id) %></p>
+<% end %>

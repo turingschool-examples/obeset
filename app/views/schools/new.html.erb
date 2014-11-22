@@ -1,0 +1,9 @@
+<%= form_tag "/schools", method: :post do %>
+  <%= label_tag "uid" %>
+  <%= text_field_tag "school[uid]" %>
+  <%= label_tag "overweight_percentage" %>
+  <%= text_field_tag "school[overweight_percentage]" %>
+  <%= label_tag "obese_percentage" %>
+  <%= text_field_tag "school[obese_percentage]" %>
+  <%= submit_tag "Create" %>
+<% end %>
